@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720" role="img" aria-labelledby="title desc">
+  <title id="title">NS4KGE ontology schema</title>
+  <desc id="desc">Schema diagram showing the main NS4KGE ontology classes and properties.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .card { fill: #ffffff; stroke: #334155; stroke-width: 2; rx: 14; }
+      .class { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .note { font: 13px Arial, sans-serif; fill: #475569; }
+      .edge { stroke: #334155; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .edge-label { font: 13px Arial, sans-serif; fill: #1e293b; paint-order: stroke; stroke: #f8fafc; stroke-width: 4px; }
+      .datatype { fill: #ecfeff; stroke: #0891b2; }
+      .external { fill: #f5f3ff; stroke: #7c3aed; }
+      .method { fill: #f0fdf4; stroke: #16a34a; }
+      .experiment { fill: #fff7ed; stroke: #ea580c; }
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="720"/>
+  <text x="40" y="46" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#0f172a">NS4KGE Ontology Core Schema</text>
+  <text x="40" y="74" font-family="Arial, sans-serif" font-size="14" fill="#475569">Ontology namespace: https://w3id.org/ns4kge/ontology#</text>
+
+  <rect class="card" x="50" y="140" width="210" height="96"/>
+  <text class="class" x="78" y="176">Article</text>
+  <text class="note" x="78" y="202">title: xsd:string</text>
+  <text class="note" x="78" y="222">date: xsd:gYear</text>
+
+  <rect class="card experiment" x="365" y="136" width="220" height="104"/>
+  <text class="class" x="396" y="176">Experimentation</text>
+  <text class="note" x="396" y="202">groups reported setup</text>
+  <text class="note" x="396" y="222">and result configurations</text>
+
+  <rect class="card experiment" x="702" y="80" width="230" height="96"/>
+  <text class="class" x="734" y="116">TrainingProtocol</text>
+  <text class="note" x="734" y="142">learningRate, nsRatio</text>
+  <text class="note" x="734" y="162">optimizer, loss, hardware</text>
+
+  <rect class="card experiment" x="702" y="278" width="230" height="104"/>
+  <text class="class" x="748" y="316">Configuration</text>
+  <text class="note" x="748" y="342">one reported result</text>
+  <text class="note" x="748" y="362">result: xsd:decimal</text>
+
+  <rect class="card method" x="50" y="430" width="210" height="96"/>
+  <text class="class" x="92" y="468">NSMethod</text>
+  <text class="note" x="92" y="494">negative sampling</text>
+  <text class="note" x="92" y="514">strategy or method</text>
+
+  <rect class="card" x="365" y="430" width="220" height="96"/>
+  <text class="class" x="418" y="468">KGEModel</text>
+  <text class="note" x="418" y="494">embedding model</text>
+  <text class="note" x="418" y="514">used in experiments</text>
+
+  <rect class="card external" x="702" y="470" width="160" height="74"/>
+  <text class="class" x="754" y="506">Task</text>
+  <text class="note" x="738" y="528">evaluation task</text>
+
+  <rect class="card external" x="900" y="470" width="160" height="74"/>
+  <text class="class" x="944" y="506">Dataset</text>
+  <text class="note" x="924" y="528">subclass of VoID</text>
+
+  <rect class="card external" x="702" y="590" width="160" height="74"/>
+  <text class="class" x="746" y="626">Metric</text>
+  <text class="note" x="732" y="648">reported measure</text>
+
+  <rect class="card external" x="900" y="590" width="160" height="74"/>
+  <text class="class" x="928" y="626">Optimizer</text>
+  <text class="note" x="924" y="648">training choice</text>
+
+  <rect class="card external" x="932" y="250" width="150" height="74"/>
+  <text class="class" x="964" y="286">Hardware</text>
+  <text class="note" x="962" y="308">compute setup</text>
+
+  <rect class="card external" x="932" y="150" width="150" height="74"/>
+  <text class="class" x="954" y="186">LossFunction</text>
+  <text class="note" x="960" y="208">training loss</text>
+
+  <rect class="card method" x="50" y="584" width="160" height="72"/>
+  <text class="class" x="92" y="620">Category</text>
+  <text class="note" x="82" y="642">NS taxonomy</text>
+
+  <rect class="card method" x="250" y="584" width="160" height="72"/>
+  <text class="class" x="288" y="620">Subcategory</text>
+  <text class="note" x="280" y="642">NS taxonomy</text>
+
+  <rect class="card method" x="450" y="584" width="190" height="72"/>
+  <text class="class" x="486" y="620">EvaluationDimension</text>
+  <text class="note" x="498" y="642">quality criteria</text>
+
+  <path class="edge" d="M260 188 L365 188"/>
+  <text class="edge-label" x="274" y="176">hasExperimentation</text>
+
+  <path class="edge" d="M585 174 C640 150 650 130 702 128"/>
+  <text class="edge-label" x="603" y="132">hasTrainingProtocol</text>
+
+  <path class="edge" d="M585 210 C640 250 650 318 702 330"/>
+  <text class="edge-label" x="598" y="286">hasConfiguration</text>
+
+  <path class="edge" d="M702 330 C610 340 340 400 260 455"/>
+  <text class="edge-label" x="474" y="386">hasNSMethod</text>
+
+  <path class="edge" d="M702 342 C620 386 590 430 585 466"/>
+  <text class="edge-label" x="594" y="422">hasKGEModel</text>
+
+  <path class="edge" d="M818 382 L790 470"/>
+  <text class="edge-label" x="808" y="432">hasTask</text>
+
+  <path class="edge" d="M882 382 L952 470"/>
+  <text class="edge-label" x="902" y="432">hasDataset</text>
+
+  <path class="edge" d="M790 382 L780 590"/>
+  <text class="edge-label" x="716" y="460">hasMetric</text>
+
+  <path class="edge" d="M885 118 C930 124 964 138 984 150"/>
+  <text class="edge-label" x="905" y="116">hasLossFunction</text>
+
+  <path class="edge" d="M888 158 C938 188 986 214 1004 250"/>
+  <text class="edge-label" x="922" y="236">hasHardware</text>
+
+  <path class="edge" d="M846 176 C885 310 940 500 980 590"/>
+  <text class="edge-label" x="940" y="456">hasOptimizer</text>
+
+  <path class="edge" d="M126 526 L126 584"/>
+  <text class="edge-label" x="138" y="560">hasCategory</text>
+
+  <path class="edge" d="M190 526 C240 548 304 562 326 584"/>
+  <text class="edge-label" x="246" y="548">hasSubcategory</text>
+
+  <path class="edge" d="M260 494 C340 530 460 548 528 584"/>
+  <text class="edge-label" x="362" y="544">hasEvaluationDimension</text>
+
+  <path class="edge" d="M156 236 L156 430"/>
+  <text class="edge-label" x="168" y="332">proposes or mentions</text>
+
+  <path class="edge" d="M260 192 C318 264 318 378 365 455"/>
+  <text class="edge-label" x="278" y="340">mentionsKGEModel</text>
+</svg>

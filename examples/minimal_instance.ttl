@@ -1,0 +1,35 @@
+@base <https://w3id.org/ns4kge/id/> .
+@prefix ns4kge: <https://w3id.org/ns4kge/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<article/minimal> rdf:type ns4kge:Article .
+<article/minimal> ns4kge:title "Minimal synthetic article"^^xsd:string .
+<article/minimal> ns4kge:date "2026"^^xsd:gYear .
+<article/minimal> ns4kge:proposesNSMethod <ns-method/minimal-negative-sampling> .
+<article/minimal> ns4kge:mentionsKGEModel <kge-model/transe> .
+<article/minimal> ns4kge:hasExperimentation <experimentation/minimal> .
+
+<ns-method/minimal-negative-sampling> rdf:type ns4kge:NSMethod .
+<kge-model/transe> rdf:type ns4kge:KGEModel .
+<dataset/synthetic-kg> rdf:type ns4kge:Dataset .
+<task/link-prediction> rdf:type ns4kge:Task .
+<metric/mrr> rdf:type ns4kge:Metric .
+<optimizer/adam> rdf:type ns4kge:Optimizer .
+
+<experimentation/minimal> rdf:type ns4kge:Experimentation .
+<experimentation/minimal> ns4kge:hasTrainingProtocol <training-protocol/minimal> .
+<experimentation/minimal> ns4kge:hasConfiguration <configuration/minimal/1> .
+
+<training-protocol/minimal> rdf:type ns4kge:TrainingProtocol .
+<training-protocol/minimal> ns4kge:hasOptimizer <optimizer/adam> .
+<training-protocol/minimal> ns4kge:learningRate "0.001"^^xsd:decimal .
+<training-protocol/minimal> ns4kge:nsRatio "1"^^xsd:decimal .
+
+<configuration/minimal/1> rdf:type ns4kge:Configuration .
+<configuration/minimal/1> ns4kge:hasTask <task/link-prediction> .
+<configuration/minimal/1> ns4kge:hasDataset <dataset/synthetic-kg> .
+<configuration/minimal/1> ns4kge:hasMetric <metric/mrr> .
+<configuration/minimal/1> ns4kge:hasKGEModel <kge-model/transe> .
+<configuration/minimal/1> ns4kge:hasNSMethod <ns-method/minimal-negative-sampling> .
+<configuration/minimal/1> ns4kge:result "0.42"^^xsd:decimal .
