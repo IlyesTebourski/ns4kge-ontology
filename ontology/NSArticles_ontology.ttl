@@ -16,10 +16,12 @@
     dcterms:description "Ontology for representing scientific articles about negative sampling methods for knowledge graph embeddings."@en ;
     dcterms:creator "Ilyes Tebourski" , "Pierre-Henri Paris" , "Nicoleta Preda" , "Fatiha Sais" ;
     dcterms:issued "2026-05-06"^^xsd:date ;
+    dcterms:identifier "10.5281/zenodo.20058306" ;
+    dcterms:bibliographicCitation "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Ontology (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20058306"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespacePrefix "ns4kge" ;
     vann:preferredNamespaceUri "https://w3id.org/ns4kge/ontology#" ;
-    rdfs:seeAlso <https://github.com/IlyesTebourski/ns4kge-ontology> ;
+    rdfs:seeAlso <https://github.com/IlyesTebourski/ns4kge-ontology> , <https://doi.org/10.5281/zenodo.20058306> ;
     owl:versionIRI <https://w3id.org/ns4kge/ontology/1.0.0> ;
     owl:versionInfo "v1.0.0" .
 

@@ -24,7 +24,7 @@ Reusable ontology for representing scientific papers about knowledge graph embed
 - Release target: `v1.0.0`.
 - Release date: 2026-05-06.
 - License: CC BY 4.0.
-- Zenodo DOI: pending archival of the public `v1.0.0` release.
+- Zenodo DOI: `https://doi.org/10.5281/zenodo.20058306`.
 - Dereferenceable ontology IRI: `https://w3id.org/ns4kge/ontology`.
 
 The repository contains only the ontology, generated SHACL shapes, documentation, and synthetic examples. It does not redistribute source article text.
