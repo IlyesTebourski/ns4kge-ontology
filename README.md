@@ -3,8 +3,8 @@
 Reusable ontology for representing scientific papers about knowledge graph embeddings and negative sampling.
 
 ## Contents
-- `ontology/NSArticles_ontology.ttl` is the authoritative OWL/Turtle ontology.
-- `ontology/NSArticles_shapes.ttl` is generated SHACL from ontology domains, ranges, and cardinality restrictions.
+- `ontology/ns4kge_ontology.ttl` is the authoritative OWL/Turtle ontology.
+- `ontology/ns4kge_shapes.ttl` is generated SHACL from ontology domains, ranges, and cardinality restrictions.
 - `docs/competency_questions.md` lists the competency questions used by the paper.
 - `examples/minimal_instance.ttl` is a synthetic example instance; it is not derived from any published paper.
 
@@ -64,13 +64,13 @@ The repository contains only the ontology, generated SHACL shapes, documentation
 Python tooling lives in the separate `ns4kge-extraction-pipeline` artifact. From that folder, regenerate shapes with:
 
 ```bash
-uv run nofacts-gen-shapes --ontology ../ns4kge-ontology/ontology/NSArticles_ontology.ttl --out ../ns4kge-ontology/ontology/NSArticles_shapes.ttl
+uv run nofacts-gen-shapes --ontology ../ns4kge-ontology/ontology/ns4kge_ontology.ttl --out ../ns4kge-ontology/ontology/ns4kge_shapes.ttl
 ```
 
 Validate a populated KG with:
 
 ```bash
-uv run nofacts-validate --data ../ns4kge-kg/kg/NSArticles_populated.ttl --shapes ../ns4kge-ontology/ontology/NSArticles_shapes.ttl
+uv run nofacts-validate --data ../ns4kge-kg/kg/ns4kge_populated.ttl --shapes ../ns4kge-ontology/ontology/ns4kge_shapes.ttl
 ```
 
 ## License
