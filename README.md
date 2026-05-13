@@ -9,22 +9,21 @@ Reusable ontology for representing scientific papers about knowledge graph embed
 - `examples/minimal_instance.ttl` is a synthetic example instance; it is not derived from any published paper.
 
 ## Version
-- Current artifact version: `v1.0.0`.
-- For the first public GitHub release, create the release/tag as `v1.0.0`.
+- Current artifact version: `v1.0.1`.
 
 ## Persistent Identifiers
 - Ontology IRI: `https://w3id.org/ns4kge/ontology`.
 - Ontology term namespace: `https://w3id.org/ns4kge/ontology#`.
-- Version IRI: `https://w3id.org/ns4kge/ontology/1.0.0`.
+- Version IRI: `https://w3id.org/ns4kge/ontology/1.0.1`.
 - Class example: `https://w3id.org/ns4kge/ontology#Article`.
 - Property example: `https://w3id.org/ns4kge/ontology#hasConfiguration`.
 
 ## Resource Availability
 - Repository: `https://github.com/IlyesTebourski/ns4kge-ontology`.
-- Release target: `v1.0.0`.
-- Release date: 2026-05-06.
+- Release: `v1.0.1`.
+- Release date: 2026-05-13.
 - License: CC BY 4.0.
-- Zenodo DOI: `https://doi.org/10.5281/zenodo.20058306`.
+- Zenodo DOI: `https://doi.org/10.5281/zenodo.20160705`.
 - Dereferenceable ontology IRI: `https://w3id.org/ns4kge/ontology`.
 
 The repository contains only the ontology, generated SHACL shapes, documentation, and synthetic examples. It does not redistribute source article text.
@@ -49,7 +48,7 @@ The repository contains only the ontology, generated SHACL shapes, documentation
 - The ontology uses `dcterms` for artifact metadata, `vann` for preferred namespace metadata, BIBO for article alignment, and VoID for dataset alignment.
 
 ## Sustainability And Maintenance
-- The first intended public release is `v1.0.0`.
+- Current release is `v1.0.1`.
 - Ontology term IRIs are intended to remain stable under `https://w3id.org/ns4kge/ontology#`.
 - Breaking ontology changes should use a new version IRI and release tag.
 - SHACL shapes are generated from ontology domains, ranges, and cardinality restrictions using the companion extraction pipeline.
