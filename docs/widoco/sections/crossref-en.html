@@ -1,0 +1,1128 @@
+<h2 id="crossreference" class="list">Cross-reference for NS4KGE Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by NS4KGE Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Adaptability" title="https://w3id.org/ns4kge/ontology#Adaptability">Adaptability</a></li>
+  <li><a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a></li>
+  <li><a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a></li>
+  <li><a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a></li>
+  <li><a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a></li>
+  <li><a href="#Effectiveness" title="https://w3id.org/ns4kge/ontology#Effectiveness">Effectiveness</a></li>
+  <li><a href="#Efficiency" title="https://w3id.org/ns4kge/ontology#Efficiency">Efficiency</a></li>
+  <li><a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a></li>
+  <li><a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a></li>
+  <li><a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a></li>
+  <li><a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a></li>
+  <li><a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a></li>
+  <li><a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a></li>
+  <li><a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a></li>
+  <li><a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a></li>
+  <li><a href="#Quality" title="https://w3id.org/ns4kge/ontology#Quality">Quality</a></li>
+  <li><a href="#Stability" title="https://w3id.org/ns4kge/ontology#Stability">Stability</a></li>
+  <li><a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a></li>
+  <li><a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a></li>
+  <li><a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a></li>
+ </ul>
+ <div class="entity" id="Adaptability">
+  <h3>Adaptability<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Adaptability</p>
+  <div class="comment">
+   <span class="markdown">Evaluation dimension concerning adaptation to data, model, or training state.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Effectiveness" title="https://w3id.org/ns4kge/ontology#Effectiveness">Effectiveness</a> <sup class="type-c" title="class">c</sup>, <a href="#Efficiency" title="https://w3id.org/ns4kge/ontology#Efficiency">Efficiency</a> <sup class="type-c" title="class">c</sup>, <a href="#Quality" title="https://w3id.org/ns4kge/ontology#Quality">Quality</a> <sup class="type-c" title="class">c</sup>, <a href="#Stability" title="https://w3id.org/ns4kge/ontology#Stability">Stability</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Article">
+  <h3>Article<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Article</p>
+  <div class="comment">
+   <span class="markdown">Scientific article about knowledge graph embeddings and negative sampling.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/ontology/bibo/AcademicArticle" target="_blank" title="http://purl.org/ontology/bibo/AcademicArticle">Academic Article</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#date" title="https://w3id.org/ns4kge/ontology#date">date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasExperimentation" title="https://w3id.org/ns4kge/ontology#hasExperimentation">has experimentation</a> <sup class="type-op" title="object property">op</sup>, <a href="#mentionsKGEModel" title="https://w3id.org/ns4kge/ontology#mentionsKGEModel">mentions KGE model</a> <sup class="type-op" title="object property">op</sup>, <a href="#mentionsNSMethod" title="https://w3id.org/ns4kge/ontology#mentionsNSMethod">mentions negative sampling method</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposesKGEModel" title="https://w3id.org/ns4kge/ontology#proposesKGEModel">proposes KGE model</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposesNSMethod" title="https://w3id.org/ns4kge/ontology#proposesNSMethod">proposes negative sampling method</a> <sup class="type-op" title="object property">op</sup>, <a href="#title" title="https://w3id.org/ns4kge/ontology#title">title</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Category">
+  <h3>Category<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Category</p>
+  <div class="comment">
+   <span class="markdown">High-level taxonomy category for negative sampling methods.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCategory" title="https://w3id.org/ns4kge/ontology#hasCategory">has category</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Configuration">
+  <h3>Configuration<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Configuration</p>
+  <div class="comment">
+   <span class="markdown">Reported experimental configuration combining a task, dataset, metric, result, and optionally a KGE model and negative sampling method.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://org.semanticweb.owlapi/error#Error1" target="_blank" title="http://org.semanticweb.owlapi/error#Error1">Error1</a> <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error2" target="_blank" title="http://org.semanticweb.owlapi/error#Error2">Error2</a> <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error3" target="_blank" title="http://org.semanticweb.owlapi/error#Error3">Error3</a> <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error4" target="_blank" title="http://org.semanticweb.owlapi/error#Error4">Error4</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasKGEModel" title="https://w3id.org/ns4kge/ontology#hasKGEModel">has KGE model</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDataset" title="https://w3id.org/ns4kge/ontology#hasDataset">has dataset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasMetric" title="https://w3id.org/ns4kge/ontology#hasMetric">has metric</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasNSMethod" title="https://w3id.org/ns4kge/ontology#hasNSMethod">has negative sampling method</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTask" title="https://w3id.org/ns4kge/ontology#hasTask">has task</a> <sup class="type-op" title="object property">op</sup>, <a href="#result" title="https://w3id.org/ns4kge/ontology#result">result</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasConfiguration" title="https://w3id.org/ns4kge/ontology#hasConfiguration">has configuration</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Dataset">
+  <h3>Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Dataset</p>
+  <div class="comment">
+   <span class="markdown">Benchmark dataset used to evaluate a configuration.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://rdfs.org/ns/void#Dataset" target="_blank" title="http://rdfs.org/ns/void#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasDataset" title="https://w3id.org/ns4kge/ontology#hasDataset">has dataset</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Effectiveness">
+  <h3>Effectiveness<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Effectiveness</p>
+  <div class="comment">
+   <span class="markdown">Evaluation dimension concerning predictive performance.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Adaptability" title="https://w3id.org/ns4kge/ontology#Adaptability">Adaptability</a> <sup class="type-c" title="class">c</sup>, <a href="#Efficiency" title="https://w3id.org/ns4kge/ontology#Efficiency">Efficiency</a> <sup class="type-c" title="class">c</sup>, <a href="#Quality" title="https://w3id.org/ns4kge/ontology#Quality">Quality</a> <sup class="type-c" title="class">c</sup>, <a href="#Stability" title="https://w3id.org/ns4kge/ontology#Stability">Stability</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Efficiency">
+  <h3>Efficiency<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Efficiency</p>
+  <div class="comment">
+   <span class="markdown">Evaluation dimension concerning computational cost or scalability.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Adaptability" title="https://w3id.org/ns4kge/ontology#Adaptability">Adaptability</a> <sup class="type-c" title="class">c</sup>, <a href="#Effectiveness" title="https://w3id.org/ns4kge/ontology#Effectiveness">Effectiveness</a> <sup class="type-c" title="class">c</sup>, <a href="#Quality" title="https://w3id.org/ns4kge/ontology#Quality">Quality</a> <sup class="type-c" title="class">c</sup>, <a href="#Stability" title="https://w3id.org/ns4kge/ontology#Stability">Stability</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EvaluationDimension">
+  <h3>Evaluation dimension<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#EvaluationDimension</p>
+  <div class="comment">
+   <span class="markdown">Qualitative dimension for assessing negative sampling methods.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Adaptability" title="https://w3id.org/ns4kge/ontology#Adaptability">Adaptability</a> <sup class="type-c" title="class">c</sup>, <a href="#Effectiveness" title="https://w3id.org/ns4kge/ontology#Effectiveness">Effectiveness</a> <sup class="type-c" title="class">c</sup>, <a href="#Efficiency" title="https://w3id.org/ns4kge/ontology#Efficiency">Efficiency</a> <sup class="type-c" title="class">c</sup>, <a href="#Quality" title="https://w3id.org/ns4kge/ontology#Quality">Quality</a> <sup class="type-c" title="class">c</sup>, <a href="#Stability" title="https://w3id.org/ns4kge/ontology#Stability">Stability</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasEvaluationDimension" title="https://w3id.org/ns4kge/ontology#hasEvaluationDimension">has evaluation dimension</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Experimentation">
+  <h3>Experimentation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Experimentation</p>
+  <div class="comment">
+   <span class="markdown">Experimental information extracted from an article, including training protocol and configurations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasConfiguration" title="https://w3id.org/ns4kge/ontology#hasConfiguration">has configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTrainingProtocol" title="https://w3id.org/ns4kge/ontology#hasTrainingProtocol">has training protocol</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasExperimentation" title="https://w3id.org/ns4kge/ontology#hasExperimentation">has experimentation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Hardware">
+  <h3>Hardware<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Hardware</p>
+  <div class="comment">
+   <span class="markdown">Hardware or compute environment reported for a training protocol.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasHardware" title="https://w3id.org/ns4kge/ontology#hasHardware">has hardware</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="KGEModel">
+  <h3>KGE model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#KGEModel</p>
+  <div class="comment">
+   <span class="markdown">Knowledge graph embedding model used in experiments.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasKGEModel" title="https://w3id.org/ns4kge/ontology#hasKGEModel">has KGE model</a> <sup class="type-op" title="object property">op</sup>, <a href="#mentionsKGEModel" title="https://w3id.org/ns4kge/ontology#mentionsKGEModel">mentions KGE model</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposesKGEModel" title="https://w3id.org/ns4kge/ontology#proposesKGEModel">proposes KGE model</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LossFunction">
+  <h3>Loss function<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#LossFunction</p>
+  <div class="comment">
+   <span class="markdown">Loss function used in a training protocol.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasLossFunction" title="https://w3id.org/ns4kge/ontology#hasLossFunction">has loss function</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Metric">
+  <h3>Metric<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Metric</p>
+  <div class="comment">
+   <span class="markdown">Evaluation metric used for a reported result.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMetric" title="https://w3id.org/ns4kge/ontology#hasMetric">has metric</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NSMethod">
+  <h3>Negative sampling method<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#NSMethod</p>
+  <div class="comment">
+   <span class="markdown">Negative sampling strategy proposed, mentioned, or evaluated in knowledge graph embedding experiments.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCategory" title="https://w3id.org/ns4kge/ontology#hasCategory">has category</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEvaluationDimension" title="https://w3id.org/ns4kge/ontology#hasEvaluationDimension">has evaluation dimension</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSubcategory" title="https://w3id.org/ns4kge/ontology#hasSubcategory">has subcategory</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasNSMethod" title="https://w3id.org/ns4kge/ontology#hasNSMethod">has negative sampling method</a> <sup class="type-op" title="object property">op</sup>, <a href="#mentionsNSMethod" title="https://w3id.org/ns4kge/ontology#mentionsNSMethod">mentions negative sampling method</a> <sup class="type-op" title="object property">op</sup>, <a href="#proposesNSMethod" title="https://w3id.org/ns4kge/ontology#proposesNSMethod">proposes negative sampling method</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Optimizer">
+  <h3>Optimizer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Optimizer</p>
+  <div class="comment">
+   <span class="markdown">Optimization algorithm used in a training protocol.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasOptimizer" title="https://w3id.org/ns4kge/ontology#hasOptimizer">has optimizer</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Quality">
+  <h3>Quality<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Quality</p>
+  <div class="comment">
+   <span class="markdown">Evaluation dimension concerning the quality of generated negatives or learned representations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Adaptability" title="https://w3id.org/ns4kge/ontology#Adaptability">Adaptability</a> <sup class="type-c" title="class">c</sup>, <a href="#Effectiveness" title="https://w3id.org/ns4kge/ontology#Effectiveness">Effectiveness</a> <sup class="type-c" title="class">c</sup>, <a href="#Efficiency" title="https://w3id.org/ns4kge/ontology#Efficiency">Efficiency</a> <sup class="type-c" title="class">c</sup>, <a href="#Stability" title="https://w3id.org/ns4kge/ontology#Stability">Stability</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Stability">
+  <h3>Stability<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Stability</p>
+  <div class="comment">
+   <span class="markdown">Evaluation dimension concerning robustness and consistency during training or evaluation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Adaptability" title="https://w3id.org/ns4kge/ontology#Adaptability">Adaptability</a> <sup class="type-c" title="class">c</sup>, <a href="#Effectiveness" title="https://w3id.org/ns4kge/ontology#Effectiveness">Effectiveness</a> <sup class="type-c" title="class">c</sup>, <a href="#Efficiency" title="https://w3id.org/ns4kge/ontology#Efficiency">Efficiency</a> <sup class="type-c" title="class">c</sup>, <a href="#Quality" title="https://w3id.org/ns4kge/ontology#Quality">Quality</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Subcategory">
+  <h3>Subcategory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Subcategory</p>
+  <div class="comment">
+   <span class="markdown">Fine-grained taxonomy subcategory for negative sampling methods.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubcategory" title="https://w3id.org/ns4kge/ontology#hasSubcategory">has subcategory</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Task">
+  <h3>Task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#Task</p>
+  <div class="comment">
+   <span class="markdown">Evaluation task addressed by a configuration.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasTask" title="https://w3id.org/ns4kge/ontology#hasTask">has task</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TrainingProtocol">
+  <h3>Training protocol<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#TrainingProtocol</p>
+  <div class="comment">
+   <span class="markdown">Training setup reported for experiments, including optimizer, loss function, hardware, learning rate, and negative sampling ratio.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasHardware" title="https://w3id.org/ns4kge/ontology#hasHardware">has hardware</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLossFunction" title="https://w3id.org/ns4kge/ontology#hasLossFunction">has loss function</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOptimizer" title="https://w3id.org/ns4kge/ontology#hasOptimizer">has optimizer</a> <sup class="type-op" title="object property">op</sup>, <a href="#learningRate" title="https://w3id.org/ns4kge/ontology#learningRate">learning rate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#nsRatio" title="https://w3id.org/ns4kge/ontology#nsRatio">negative sampling ratio</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasTrainingProtocol" title="https://w3id.org/ns4kge/ontology#hasTrainingProtocol">has training protocol</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>, <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>, <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>, <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>, <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>, <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>, <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>, <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>, <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>, <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>, <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>, <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasCategory" title="https://w3id.org/ns4kge/ontology#hasCategory">has category</a></li>
+  <li><a href="#hasConfiguration" title="https://w3id.org/ns4kge/ontology#hasConfiguration">has configuration</a></li>
+  <li><a href="#hasDataset" title="https://w3id.org/ns4kge/ontology#hasDataset">has dataset</a></li>
+  <li><a href="#hasEvaluationDimension" title="https://w3id.org/ns4kge/ontology#hasEvaluationDimension">has evaluation dimension</a></li>
+  <li><a href="#hasExperimentation" title="https://w3id.org/ns4kge/ontology#hasExperimentation">has experimentation</a></li>
+  <li><a href="#hasHardware" title="https://w3id.org/ns4kge/ontology#hasHardware">has hardware</a></li>
+  <li><a href="#hasKGEModel" title="https://w3id.org/ns4kge/ontology#hasKGEModel">has KGE model</a></li>
+  <li><a href="#hasLossFunction" title="https://w3id.org/ns4kge/ontology#hasLossFunction">has loss function</a></li>
+  <li><a href="#hasMetric" title="https://w3id.org/ns4kge/ontology#hasMetric">has metric</a></li>
+  <li><a href="#hasNSMethod" title="https://w3id.org/ns4kge/ontology#hasNSMethod">has negative sampling method</a></li>
+  <li><a href="#hasOptimizer" title="https://w3id.org/ns4kge/ontology#hasOptimizer">has optimizer</a></li>
+  <li><a href="#hasSubcategory" title="https://w3id.org/ns4kge/ontology#hasSubcategory">has subcategory</a></li>
+  <li><a href="#hasTask" title="https://w3id.org/ns4kge/ontology#hasTask">has task</a></li>
+  <li><a href="#hasTrainingProtocol" title="https://w3id.org/ns4kge/ontology#hasTrainingProtocol">has training protocol</a></li>
+  <li><a href="#mentionsKGEModel" title="https://w3id.org/ns4kge/ontology#mentionsKGEModel">mentions KGE model</a></li>
+  <li><a href="#mentionsNSMethod" title="https://w3id.org/ns4kge/ontology#mentionsNSMethod">mentions negative sampling method</a></li>
+  <li><a href="#proposesKGEModel" title="https://w3id.org/ns4kge/ontology#proposesKGEModel">proposes KGE model</a></li>
+  <li><a href="#proposesNSMethod" title="https://w3id.org/ns4kge/ontology#proposesNSMethod">proposes negative sampling method</a></li>
+ </ul>
+ <div class="entity" id="hasCategory">
+  <h3>has category<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasCategory</p>
+  <div class="comment">
+   <span class="markdown">Connects a negative sampling method to its high-level taxonomy category.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Category" title="https://w3id.org/ns4kge/ontology#Category">Category</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasConfiguration">
+  <h3>has configuration<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasConfiguration</p>
+  <div class="comment">
+   <span class="markdown">Connects an experimentation node to one reported experimental configuration.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDataset">
+  <h3>has dataset<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasDataset</p>
+  <div class="comment">
+   <span class="markdown">Connects a configuration to the benchmark dataset used for evaluation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Dataset" title="https://w3id.org/ns4kge/ontology#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEvaluationDimension">
+  <h3>has evaluation dimension<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasEvaluationDimension</p>
+  <div class="comment">
+   <span class="markdown">Connects a negative sampling method to a qualitative evaluation dimension.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EvaluationDimension" title="https://w3id.org/ns4kge/ontology#EvaluationDimension">Evaluation dimension</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasExperimentation">
+  <h3>has experimentation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasExperimentation</p>
+  <div class="comment">
+   <span class="markdown">Connects an article to the experimental setup and reported configurations extracted from it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasHardware">
+  <h3>has hardware<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasHardware</p>
+  <div class="comment">
+   <span class="markdown">Connects a training protocol to hardware information reported for the experiment.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Hardware" title="https://w3id.org/ns4kge/ontology#Hardware">Hardware</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasKGEModel">
+  <h3>has KGE model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasKGEModel</p>
+  <div class="comment">
+   <span class="markdown">Connects a configuration to the knowledge graph embedding model evaluated in that configuration.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasLossFunction">
+  <h3>has loss function<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasLossFunction</p>
+  <div class="comment">
+   <span class="markdown">Connects a training protocol to a loss function used for optimization.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#LossFunction" title="https://w3id.org/ns4kge/ontology#LossFunction">Loss function</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMetric">
+  <h3>has metric<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasMetric</p>
+  <div class="comment">
+   <span class="markdown">Connects a configuration to the evaluation metric used for the reported result.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Metric" title="https://w3id.org/ns4kge/ontology#Metric">Metric</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasNSMethod">
+  <h3>has negative sampling method<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasNSMethod</p>
+  <div class="comment">
+   <span class="markdown">Connects a configuration to the negative sampling method evaluated in that configuration.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasOptimizer">
+  <h3>has optimizer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasOptimizer</p>
+  <div class="comment">
+   <span class="markdown">Connects a training protocol to an optimizer used for model training.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Optimizer" title="https://w3id.org/ns4kge/ontology#Optimizer">Optimizer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSubcategory">
+  <h3>has subcategory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasSubcategory</p>
+  <div class="comment">
+   <span class="markdown">Connects a negative sampling method to a more specific taxonomy subcategory.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Subcategory" title="https://w3id.org/ns4kge/ontology#Subcategory">Subcategory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTask">
+  <h3>has task<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasTask</p>
+  <div class="comment">
+   <span class="markdown">Connects a configuration to the evaluation task, such as link prediction.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="https://w3id.org/ns4kge/ontology#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTrainingProtocol">
+  <h3>has training protocol<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#hasTrainingProtocol</p>
+  <div class="comment">
+   <span class="markdown">Connects an experimentation node to the training protocol reported for the article.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Experimentation" title="https://w3id.org/ns4kge/ontology#Experimentation">Experimentation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mentionsKGEModel">
+  <h3>mentions KGE model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#mentionsKGEModel</p>
+  <div class="comment">
+   <span class="markdown">Connects an article to a knowledge graph embedding model that it mentions or compares.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="mentionsNSMethod">
+  <h3>mentions negative sampling method<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#mentionsNSMethod</p>
+  <div class="comment">
+   <span class="markdown">Connects an article to a negative sampling method that it mentions or compares.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="proposesKGEModel">
+  <h3>proposes KGE model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#proposesKGEModel</p>
+  <div class="comment">
+   <span class="markdown">Connects an article to the knowledge graph embedding model that it proposes.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#KGEModel" title="https://w3id.org/ns4kge/ontology#KGEModel">KGE model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="proposesNSMethod">
+  <h3>proposes negative sampling method<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#proposesNSMethod</p>
+  <div class="comment">
+   <span class="markdown">Connects an article to the negative sampling method that it proposes.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#NSMethod" title="https://w3id.org/ns4kge/ontology#NSMethod">Negative sampling method</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#date" title="https://w3id.org/ns4kge/ontology#date">date</a></li>
+  <li><a href="#learningRate" title="https://w3id.org/ns4kge/ontology#learningRate">learning rate</a></li>
+  <li><a href="#nsRatio" title="https://w3id.org/ns4kge/ontology#nsRatio">negative sampling ratio</a></li>
+  <li><a href="#result" title="https://w3id.org/ns4kge/ontology#result">result</a></li>
+  <li><a href="#title" title="https://w3id.org/ns4kge/ontology#title">title</a></li>
+ </ul>
+ <div class="entity" id="date">
+  <h3>date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#date</p>
+  <div class="comment">
+   <span class="markdown">Publication year of the scientific article.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#gYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gYear">g Year</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="learningRate">
+  <h3>learning rate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#learningRate</p>
+  <div class="comment">
+   <span class="markdown">Learning rate reported for a training protocol.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="nsRatio">
+  <h3>negative sampling ratio<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#nsRatio</p>
+  <div class="comment">
+   <span class="markdown">Negative sampling ratio reported for a training protocol.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrainingProtocol" title="https://w3id.org/ns4kge/ontology#TrainingProtocol">Training protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="result">
+  <h3>result<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#result</p>
+  <div class="comment">
+   <span class="markdown">Numeric value reported for an experimental configuration and metric.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Configuration" title="https://w3id.org/ns4kge/ontology#Configuration">Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="title">
+  <h3>title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ns4kge/ontology#title</p>
+  <div class="comment">
+   <span class="markdown">Title of the scientific article.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Article" title="https://w3id.org/ns4kge/ontology#Article">Article</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation"> <span>bibliographic Citation</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://www.w3.org/2002/07/owl#exactCardinality" title="http://www.w3.org/2002/07/owl#exactCardinality"> <span>exact Cardinality</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier"> <span>identifier</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued"> <span>issued</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
+  <h3>bibliographic Citation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2002/07/owl#exactCardinality">
+  <h3>exact Cardinality<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2002/07/owl#exactCardinality</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/identifier">
+  <h3>identifier<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/issued">
+  <h3>issued<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

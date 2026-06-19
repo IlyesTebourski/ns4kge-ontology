@@ -1,0 +1,1946 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://rdfs.org/ns/void", "https://w3id.org/ns4kge/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://org.semanticweb.owlapi/error", "http://purl.org/ontology/bibo" ],
+    "title" : {
+      "en" : "NS4KGE Ontology"
+    },
+    "iri" : "https://w3id.org/ns4kge/ontology",
+    "version" : "v1.0.0",
+    "author" : [ "Pierre-Henri Paris", "Ilyes Tebourski", "Nicoleta Preda", "Fatiha Sais" ],
+    "description" : {
+      "en" : "Ontology for representing scientific articles about negative sampling methods for knowledge graph embeddings."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "10.5281/zenodo.20058306",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Fatiha Sais",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ilyes Tebourski",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Nicoleta Preda",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Pierre-Henri Paris",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ns4kge",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ns4kge/ontology#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Ontology (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20058306",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-05-06",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "NS4KGE Ontology",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/IlyesTebourski/ns4kge-ontology",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://doi.org/10.5281/zenodo.20058306",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "gYear"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Hardware",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hardware",
+      "en" : "Hardware"
+    },
+    "comment" : {
+      "en" : "Hardware or compute environment reported for a training protocol."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Effectiveness",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Effectiveness",
+      "en" : "Effectiveness"
+    },
+    "comment" : {
+      "en" : "Evaluation dimension concerning predictive performance."
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#KGEModel",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KGEModel",
+      "en" : "KGE model"
+    },
+    "comment" : {
+      "en" : "Knowledge graph embedding model used in experiments."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Adaptability",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Adaptability",
+      "en" : "Adaptability"
+    },
+    "comment" : {
+      "en" : "Evaluation dimension concerning adaptation to data, model, or training state."
+    },
+    "id" : "21",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Experimentation",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Experimentation",
+      "en" : "Experimentation"
+    },
+    "comment" : {
+      "en" : "Experimental information extracted from an article, including training protocol and configurations."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Dataset",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Dataset"
+    },
+    "comment" : {
+      "en" : "Benchmark dataset used to evaluate a configuration."
+    },
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Subcategory",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subcategory",
+      "en" : "Subcategory"
+    },
+    "comment" : {
+      "en" : "Fine-grained taxonomy subcategory for negative sampling methods."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.org/ontology/bibo/AcademicArticle",
+    "baseIri" : "http://purl.org/ontology/bibo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcademicArticle"
+    },
+    "subClasses" : [ "34" ],
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#TrainingProtocol",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainingProtocol",
+      "en" : "Training protocol"
+    },
+    "comment" : {
+      "en" : "Training setup reported for experiments, including optimizer, loss function, hardware, learning rate, and negative sampling ratio."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Configuration",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Configuration",
+      "en" : "Configuration"
+    },
+    "comment" : {
+      "en" : "Reported experimental configuration combining a task, dataset, metric, result, and optionally a KGE model and negative sampling method."
+    },
+    "id" : "15",
+    "superClasses" : [ "59", "60", "61", "62" ]
+  }, {
+    "iri" : "http://rdfs.org/ns/void#Dataset",
+    "baseIri" : "http://rdfs.org/ns/void",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "25" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#LossFunction",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LossFunction",
+      "en" : "Loss function"
+    },
+    "comment" : {
+      "en" : "Loss function used in a training protocol."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Task",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task",
+      "en" : "Task"
+    },
+    "comment" : {
+      "en" : "Evaluation task addressed by a configuration."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Category",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category",
+      "en" : "Category"
+    },
+    "comment" : {
+      "en" : "High-level taxonomy category for negative sampling methods."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Quality",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quality",
+      "en" : "Quality"
+    },
+    "comment" : {
+      "en" : "Evaluation dimension concerning the quality of generated negatives or learned representations."
+    },
+    "id" : "95",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#EvaluationDimension",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EvaluationDimension",
+      "en" : "Evaluation dimension"
+    },
+    "subClasses" : [ "101", "102", "21", "95", "18" ],
+    "comment" : {
+      "en" : "Qualitative dimension for assessing negative sampling methods."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Metric",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric",
+      "en" : "Metric"
+    },
+    "comment" : {
+      "en" : "Evaluation metric used for a reported result."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error4",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error4"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error1",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error1"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error2",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error2"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error3",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error3"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Stability",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stability",
+      "en" : "Stability"
+    },
+    "comment" : {
+      "en" : "Evaluation dimension concerning robustness and consistency during training or evaluation."
+    },
+    "id" : "102",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Efficiency",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Efficiency",
+      "en" : "Efficiency"
+    },
+    "comment" : {
+      "en" : "Evaluation dimension concerning computational cost or scalability."
+    },
+    "id" : "101",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#NSMethod",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NSMethod",
+      "en" : "Negative sampling method"
+    },
+    "comment" : {
+      "en" : "Negative sampling strategy proposed, mentioned, or evaluated in knowledge graph embedding experiments."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Optimizer",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Optimizer",
+      "en" : "Optimizer"
+    },
+    "comment" : {
+      "en" : "Optimization algorithm used in a training protocol."
+    },
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#Article",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Article",
+      "en" : "Article"
+    },
+    "comment" : {
+      "en" : "Scientific article about knowledge graph embeddings and negative sampling."
+    },
+    "id" : "34",
+    "superClasses" : [ "45" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasMetric",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasMetric",
+      "en" : "has metric"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Connects a configuration to the evaluation metric used for the reported result."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "range" : "20",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "17",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "25",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "15",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "23",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "19",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasEvaluationDimension",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasEvaluationDimension",
+      "en" : "has evaluation dimension"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Connects a negative sampling method to a qualitative evaluation dimension."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "range" : "1",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "36",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "4",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "2",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "2",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "4",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "36",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "36",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "4",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "1",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#mentionsKGEModel",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "mentionsKGEModel",
+      "en" : "mentions KGE model"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Connects an article to a knowledge graph embedding model that it mentions or compares."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasLossFunction",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasLossFunction",
+      "en" : "has loss function"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Connects a training protocol to a loss function used for optimization."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "range" : "16",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "7",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasExperimentation",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasExperimentation",
+      "en" : "has experimentation"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Connects an article to the experimental setup and reported configurations extracted from it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasDataset",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasDataset",
+      "en" : "has dataset"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Connects a configuration to the benchmark dataset used for evaluation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "range" : "23",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#proposesKGEModel",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "proposesKGEModel",
+      "en" : "proposes KGE model"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Connects an article to the knowledge graph embedding model that it proposes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "range" : "19",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "20",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "17",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "6",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "25",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "15",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "32",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#nsRatio",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "nsRatio",
+      "en" : "negative sampling ratio"
+    },
+    "maxCardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "en" : "Negative sampling ratio reported for a training protocol."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "range" : "20",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "17",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "19",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "4",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasCategory",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasCategory",
+      "en" : "has category"
+    },
+    "maxCardinality" : "1",
+    "domain" : "32",
+    "comment" : {
+      "en" : "Connects a negative sampling method to its high-level taxonomy category."
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "7",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "36",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "32",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "20",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#date",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "date"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Publication year of the scientific article."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasOptimizer",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasOptimizer",
+      "en" : "has optimizer"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Connects a training protocol to an optimizer used for model training."
+    },
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#mentionsNSMethod",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "mentionsNSMethod",
+      "en" : "mentions negative sampling method"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Connects an article to a negative sampling method that it mentions or compares."
+    },
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "range" : "23",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#title",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "title"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Title of the scientific article."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "19",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "25",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "32",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "16",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasHardware",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasHardware",
+      "en" : "has hardware"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Connects a training protocol to hardware information reported for the experiment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "range" : "36",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "7",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "20",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "32",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "16",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "17",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasConfiguration",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasConfiguration",
+      "en" : "has configuration"
+    },
+    "minCardinality" : "1",
+    "domain" : "23",
+    "comment" : {
+      "en" : "Connects an experimentation node to one reported experimental configuration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasNSMethod",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasNSMethod",
+      "en" : "has negative sampling method"
+    },
+    "maxCardinality" : "1",
+    "domain" : "15",
+    "comment" : {
+      "en" : "Connects a configuration to the negative sampling method evaluated in that configuration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasTask",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasTask",
+      "en" : "has task"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Connects a configuration to the evaluation task, such as link prediction."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "range" : "4",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "32",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "1",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "36",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasSubcategory",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSubcategory",
+      "en" : "has subcategory"
+    },
+    "maxCardinality" : "1",
+    "domain" : "32",
+    "comment" : {
+      "en" : "Connects a negative sampling method to a more specific taxonomy subcategory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "range" : "23",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "7",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "4",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "16",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "7",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "36",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "32",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "16",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "36",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "32",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "36",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "95",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "102",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "101",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "95",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "102",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "95",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "102",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "102",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "18",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasKGEModel",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasKGEModel",
+      "en" : "has KGE model"
+    },
+    "maxCardinality" : "1",
+    "domain" : "15",
+    "comment" : {
+      "en" : "Connects a configuration to the knowledge graph embedding model evaluated in that configuration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "148"
+  }, {
+    "range" : "101",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "7",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "62",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#hasTrainingProtocol",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTrainingProtocol",
+      "en" : "has training protocol"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Connects an experimentation node to the training protocol reported for the article."
+    },
+    "attributes" : [ "object" ],
+    "id" : "152"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "32",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#learningRate",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "learningRate",
+      "en" : "learning rate"
+    },
+    "maxCardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "en" : "Learning rate reported for a training protocol."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "range" : "16",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "36",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "19",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "32",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "19",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#result",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "result",
+      "en" : "result"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Numeric value reported for an experimental configuration and metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "59",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://w3id.org/ns4kge/ontology#proposesNSMethod",
+    "baseIri" : "https://w3id.org/ns4kge/ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "proposesNSMethod",
+      "en" : "proposes negative sampling method"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Connects an article to the negative sampling method that it proposes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "167"
+  }, {
+    "range" : "60",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "61",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "7",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "20",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "1",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "36",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "45",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "2",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "19",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  } ]
+}

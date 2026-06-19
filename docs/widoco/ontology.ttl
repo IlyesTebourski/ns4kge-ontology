@@ -1,0 +1,508 @@
+@prefix : <https://w3id.org/ns4kge/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ns4kge/ontology#> .
+
+<https://w3id.org/ns4kge/ontology> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/ns4kge/ontology/1.0.0> ;
+                                    <http://purl.org/dc/terms/bibliographicCitation> "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Ontology (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20058306"@en ;
+                                    <http://purl.org/dc/terms/creator> "Fatiha Sais" ,
+                                                                       "Ilyes Tebourski" ,
+                                                                       "Nicoleta Preda" ,
+                                                                       "Pierre-Henri Paris" ;
+                                    <http://purl.org/dc/terms/description> "Ontology for representing scientific articles about negative sampling methods for knowledge graph embeddings."@en ;
+                                    <http://purl.org/dc/terms/identifier> "10.5281/zenodo.20058306" ;
+                                    <http://purl.org/dc/terms/issued> "2026-05-06"^^xsd:date ;
+                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                    <http://purl.org/dc/terms/title> "NS4KGE Ontology"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "ns4kge" ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ns4kge/ontology#" ;
+                                    rdfs:seeAlso <https://doi.org/10.5281/zenodo.20058306> ,
+                                                 <https://github.com/IlyesTebourski/ns4kge-ontology> ;
+                                    owl:versionInfo "v1.0.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#exactCardinality
+owl:exactCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ns4kge/ontology#hasCategory
+:hasCategory rdf:type owl:ObjectProperty ;
+             rdfs:domain :NSMethod ;
+             rdfs:range :Category ;
+             rdfs:comment "Connects a negative sampling method to its high-level taxonomy category."@en ;
+             rdfs:label "has category"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasConfiguration
+:hasConfiguration rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Experimentation ;
+                  rdfs:range :Configuration ;
+                  rdfs:comment "Connects an experimentation node to one reported experimental configuration."@en ;
+                  rdfs:label "has configuration"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasDataset
+:hasDataset rdf:type owl:ObjectProperty ;
+            rdfs:domain :Configuration ;
+            rdfs:range :Dataset ;
+            rdfs:comment "Connects a configuration to the benchmark dataset used for evaluation."@en ;
+            rdfs:label "has dataset"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasEvaluationDimension
+:hasEvaluationDimension rdf:type owl:ObjectProperty ;
+                        rdfs:domain :NSMethod ;
+                        rdfs:range :EvaluationDimension ;
+                        rdfs:comment "Connects a negative sampling method to a qualitative evaluation dimension."@en ;
+                        rdfs:label "has evaluation dimension"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasExperimentation
+:hasExperimentation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Article ;
+                    rdfs:range :Experimentation ;
+                    rdfs:comment "Connects an article to the experimental setup and reported configurations extracted from it."@en ;
+                    rdfs:label "has experimentation"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasHardware
+:hasHardware rdf:type owl:ObjectProperty ;
+             rdfs:domain :TrainingProtocol ;
+             rdfs:range :Hardware ;
+             rdfs:comment "Connects a training protocol to hardware information reported for the experiment."@en ;
+             rdfs:label "has hardware"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasKGEModel
+:hasKGEModel rdf:type owl:ObjectProperty ;
+             rdfs:domain :Configuration ;
+             rdfs:range :KGEModel ;
+             rdfs:comment "Connects a configuration to the knowledge graph embedding model evaluated in that configuration."@en ;
+             rdfs:label "has KGE model"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasLossFunction
+:hasLossFunction rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TrainingProtocol ;
+                 rdfs:range :LossFunction ;
+                 rdfs:comment "Connects a training protocol to a loss function used for optimization."@en ;
+                 rdfs:label "has loss function"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasMetric
+:hasMetric rdf:type owl:ObjectProperty ;
+           rdfs:domain :Configuration ;
+           rdfs:range :Metric ;
+           rdfs:comment "Connects a configuration to the evaluation metric used for the reported result."@en ;
+           rdfs:label "has metric"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasNSMethod
+:hasNSMethod rdf:type owl:ObjectProperty ;
+             rdfs:domain :Configuration ;
+             rdfs:range :NSMethod ;
+             rdfs:comment "Connects a configuration to the negative sampling method evaluated in that configuration."@en ;
+             rdfs:label "has negative sampling method"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasOptimizer
+:hasOptimizer rdf:type owl:ObjectProperty ;
+              rdfs:domain :TrainingProtocol ;
+              rdfs:range :Optimizer ;
+              rdfs:comment "Connects a training protocol to an optimizer used for model training."@en ;
+              rdfs:label "has optimizer"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasSubcategory
+:hasSubcategory rdf:type owl:ObjectProperty ;
+                rdfs:domain :NSMethod ;
+                rdfs:range :Subcategory ;
+                rdfs:comment "Connects a negative sampling method to a more specific taxonomy subcategory."@en ;
+                rdfs:label "has subcategory"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasTask
+:hasTask rdf:type owl:ObjectProperty ;
+         rdfs:domain :Configuration ;
+         rdfs:range :Task ;
+         rdfs:comment "Connects a configuration to the evaluation task, such as link prediction."@en ;
+         rdfs:label "has task"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#hasTrainingProtocol
+:hasTrainingProtocol rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Experimentation ;
+                     rdfs:range :TrainingProtocol ;
+                     rdfs:comment "Connects an experimentation node to the training protocol reported for the article."@en ;
+                     rdfs:label "has training protocol"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#mentionsKGEModel
+:mentionsKGEModel rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Article ;
+                  rdfs:range :KGEModel ;
+                  rdfs:comment "Connects an article to a knowledge graph embedding model that it mentions or compares."@en ;
+                  rdfs:label "mentions KGE model"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#mentionsNSMethod
+:mentionsNSMethod rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Article ;
+                  rdfs:range :NSMethod ;
+                  rdfs:comment "Connects an article to a negative sampling method that it mentions or compares."@en ;
+                  rdfs:label "mentions negative sampling method"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#proposesKGEModel
+:proposesKGEModel rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Article ;
+                  rdfs:range :KGEModel ;
+                  rdfs:comment "Connects an article to the knowledge graph embedding model that it proposes."@en ;
+                  rdfs:label "proposes KGE model"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#proposesNSMethod
+:proposesNSMethod rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Article ;
+                  rdfs:range :NSMethod ;
+                  rdfs:comment "Connects an article to the negative sampling method that it proposes."@en ;
+                  rdfs:label "proposes negative sampling method"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ns4kge/ontology#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Article ;
+      rdfs:range xsd:gYear ;
+      rdfs:comment "Publication year of the scientific article."@en ;
+      rdfs:label "date"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#learningRate
+:learningRate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TrainingProtocol ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Learning rate reported for a training protocol."@en ;
+              rdfs:label "learning rate"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#nsRatio
+:nsRatio rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TrainingProtocol ;
+         rdfs:range xsd:decimal ;
+         rdfs:comment "Negative sampling ratio reported for a training protocol."@en ;
+         rdfs:label "negative sampling ratio"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#result
+:result rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Configuration ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "Numeric value reported for an experimental configuration and metric."@en ;
+        rdfs:label "result"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Article ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Title of the scientific article."@en ;
+       rdfs:label "title"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/AcademicArticle
+<http://purl.org/ontology/bibo/AcademicArticle> rdf:type owl:Class .
+
+
+###  http://rdfs.org/ns/void#Dataset
+<http://rdfs.org/ns/void#Dataset> rdf:type owl:Class .
+
+
+###  https://w3id.org/ns4kge/ontology#Adaptability
+:Adaptability rdf:type owl:Class ;
+              rdfs:subClassOf :EvaluationDimension ;
+              rdfs:comment "Evaluation dimension concerning adaptation to data, model, or training state."@en ;
+              rdfs:label "Adaptability"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/ontology/bibo/AcademicArticle> ;
+         rdfs:comment "Scientific article about knowledge graph embeddings and negative sampling."@en ;
+         rdfs:label "Article"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Category
+:Category rdf:type owl:Class ;
+          rdfs:comment "High-level taxonomy category for negative sampling methods."@en ;
+          rdfs:label "Category"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Configuration
+:Configuration rdf:type owl:Class ;
+               rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                               <http://org.semanticweb.owlapi/error#Error2> ,
+                               <http://org.semanticweb.owlapi/error#Error3> ,
+                               <http://org.semanticweb.owlapi/error#Error4> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasKGEModel ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasNSMethod ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "Reported experimental configuration combining a task, dataset, metric, result, and optionally a KGE model and negative sampling method."@en ;
+               rdfs:label "Configuration"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf <http://rdfs.org/ns/void#Dataset> ;
+         rdfs:comment "Benchmark dataset used to evaluate a configuration."@en ;
+         rdfs:label "Dataset"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Effectiveness
+:Effectiveness rdf:type owl:Class ;
+               rdfs:subClassOf :EvaluationDimension ;
+               rdfs:comment "Evaluation dimension concerning predictive performance."@en ;
+               rdfs:label "Effectiveness"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Efficiency
+:Efficiency rdf:type owl:Class ;
+            rdfs:subClassOf :EvaluationDimension ;
+            rdfs:comment "Evaluation dimension concerning computational cost or scalability."@en ;
+            rdfs:label "Efficiency"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#EvaluationDimension
+:EvaluationDimension rdf:type owl:Class ;
+                     rdfs:comment "Qualitative dimension for assessing negative sampling methods."@en ;
+                     rdfs:label "Evaluation dimension"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Experimentation
+:Experimentation rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasConfiguration ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 rdfs:comment "Experimental information extracted from an article, including training protocol and configurations."@en ;
+                 rdfs:label "Experimentation"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Hardware
+:Hardware rdf:type owl:Class ;
+          rdfs:comment "Hardware or compute environment reported for a training protocol."@en ;
+          rdfs:label "Hardware"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#KGEModel
+:KGEModel rdf:type owl:Class ;
+          rdfs:comment "Knowledge graph embedding model used in experiments."@en ;
+          rdfs:label "KGE model"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#LossFunction
+:LossFunction rdf:type owl:Class ;
+              rdfs:comment "Loss function used in a training protocol."@en ;
+              rdfs:label "Loss function"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Metric
+:Metric rdf:type owl:Class ;
+        rdfs:comment "Evaluation metric used for a reported result."@en ;
+        rdfs:label "Metric"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#NSMethod
+:NSMethod rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCategory ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasSubcategory ;
+                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          rdfs:comment "Negative sampling strategy proposed, mentioned, or evaluated in knowledge graph embedding experiments."@en ;
+          rdfs:label "Negative sampling method"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Optimizer
+:Optimizer rdf:type owl:Class ;
+           rdfs:comment "Optimization algorithm used in a training protocol."@en ;
+           rdfs:label "Optimizer"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Quality
+:Quality rdf:type owl:Class ;
+         rdfs:subClassOf :EvaluationDimension ;
+         rdfs:comment "Evaluation dimension concerning the quality of generated negatives or learned representations."@en ;
+         rdfs:label "Quality"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Stability
+:Stability rdf:type owl:Class ;
+           rdfs:subClassOf :EvaluationDimension ;
+           rdfs:comment "Evaluation dimension concerning robustness and consistency during training or evaluation."@en ;
+           rdfs:label "Stability"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Subcategory
+:Subcategory rdf:type owl:Class ;
+             rdfs:comment "Fine-grained taxonomy subcategory for negative sampling methods."@en ;
+             rdfs:label "Subcategory"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#Task
+:Task rdf:type owl:Class ;
+      rdfs:comment "Evaluation task addressed by a configuration."@en ;
+      rdfs:label "Task"@en .
+
+
+###  https://w3id.org/ns4kge/ontology#TrainingProtocol
+:TrainingProtocol rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :learningRate ;
+                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :nsRatio ;
+                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:comment "Training setup reported for experiments, including optimizer, loss function, hardware, learning rate, and negative sampling ratio."@en ;
+                  rdfs:label "Training protocol"@en .
+
+
+[ owl:exactCardinality 1
+] .
+
+[ owl:exactCardinality 1
+ ] .
+
+[ owl:exactCardinality 1
+ ] .
+
+[ owl:exactCardinality 1
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( :Adaptability
+                 :Effectiveness
+                 :Efficiency
+                 :Quality
+                 :Stability
+               )
+ ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Article
+                :Category
+                :Configuration
+                :Dataset
+                :EvaluationDimension
+                :Experimentation
+                :Hardware
+                :KGEModel
+                :LossFunction
+                :Metric
+                :NSMethod
+                :Optimizer
+                :Subcategory
+                :Task
+                :TrainingProtocol
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

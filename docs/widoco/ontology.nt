@@ -1,0 +1,496 @@
+<https://w3id.org/ns4kge/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ns4kge/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ns4kge/ontology/1.0.0> .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/bibliographicCitation> "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Ontology (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20058306"@en .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/creator> "Fatiha Sais" .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/creator> "Ilyes Tebourski" .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/creator> "Nicoleta Preda" .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/creator> "Pierre-Henri Paris" .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/description> "Ontology for representing scientific articles about negative sampling methods for knowledge graph embeddings."@en .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/identifier> "10.5281/zenodo.20058306" .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/issued> "2026-05-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/dc/terms/title> "NS4KGE Ontology"@en .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ns4kge" .
+<https://w3id.org/ns4kge/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ns4kge/ontology#" .
+<https://w3id.org/ns4kge/ontology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.5281/zenodo.20058306> .
+<https://w3id.org/ns4kge/ontology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/IlyesTebourski/ns4kge-ontology> .
+<https://w3id.org/ns4kge/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#exactCardinality
+<http://www.w3.org/2002/07/owl#exactCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ns4kge/ontology#hasCategory
+<https://w3id.org/ns4kge/ontology#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#NSMethod> .
+<https://w3id.org/ns4kge/ontology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Category> .
+<https://w3id.org/ns4kge/ontology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a negative sampling method to its high-level taxonomy category."@en .
+<https://w3id.org/ns4kge/ontology#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has category"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasConfiguration
+<https://w3id.org/ns4kge/ontology#hasConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Experimentation> .
+<https://w3id.org/ns4kge/ontology#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an experimentation node to one reported experimental configuration."@en .
+<https://w3id.org/ns4kge/ontology#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "has configuration"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasDataset
+<https://w3id.org/ns4kge/ontology#hasDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#hasDataset> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Dataset> .
+<https://w3id.org/ns4kge/ontology#hasDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a configuration to the benchmark dataset used for evaluation."@en .
+<https://w3id.org/ns4kge/ontology#hasDataset> <http://www.w3.org/2000/01/rdf-schema#label> "has dataset"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasEvaluationDimension
+<https://w3id.org/ns4kge/ontology#hasEvaluationDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasEvaluationDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#NSMethod> .
+<https://w3id.org/ns4kge/ontology#hasEvaluationDimension> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+<https://w3id.org/ns4kge/ontology#hasEvaluationDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a negative sampling method to a qualitative evaluation dimension."@en .
+<https://w3id.org/ns4kge/ontology#hasEvaluationDimension> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluation dimension"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasExperimentation
+<https://w3id.org/ns4kge/ontology#hasExperimentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasExperimentation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#hasExperimentation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Experimentation> .
+<https://w3id.org/ns4kge/ontology#hasExperimentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an article to the experimental setup and reported configurations extracted from it."@en .
+<https://w3id.org/ns4kge/ontology#hasExperimentation> <http://www.w3.org/2000/01/rdf-schema#label> "has experimentation"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasHardware
+<https://w3id.org/ns4kge/ontology#hasHardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasHardware> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+<https://w3id.org/ns4kge/ontology#hasHardware> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Hardware> .
+<https://w3id.org/ns4kge/ontology#hasHardware> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a training protocol to hardware information reported for the experiment."@en .
+<https://w3id.org/ns4kge/ontology#hasHardware> <http://www.w3.org/2000/01/rdf-schema#label> "has hardware"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasKGEModel
+<https://w3id.org/ns4kge/ontology#hasKGEModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasKGEModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#hasKGEModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#KGEModel> .
+<https://w3id.org/ns4kge/ontology#hasKGEModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a configuration to the knowledge graph embedding model evaluated in that configuration."@en .
+<https://w3id.org/ns4kge/ontology#hasKGEModel> <http://www.w3.org/2000/01/rdf-schema#label> "has KGE model"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasLossFunction
+<https://w3id.org/ns4kge/ontology#hasLossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasLossFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+<https://w3id.org/ns4kge/ontology#hasLossFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#LossFunction> .
+<https://w3id.org/ns4kge/ontology#hasLossFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a training protocol to a loss function used for optimization."@en .
+<https://w3id.org/ns4kge/ontology#hasLossFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has loss function"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasMetric
+<https://w3id.org/ns4kge/ontology#hasMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#hasMetric> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Metric> .
+<https://w3id.org/ns4kge/ontology#hasMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a configuration to the evaluation metric used for the reported result."@en .
+<https://w3id.org/ns4kge/ontology#hasMetric> <http://www.w3.org/2000/01/rdf-schema#label> "has metric"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasNSMethod
+<https://w3id.org/ns4kge/ontology#hasNSMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasNSMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#hasNSMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#NSMethod> .
+<https://w3id.org/ns4kge/ontology#hasNSMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a configuration to the negative sampling method evaluated in that configuration."@en .
+<https://w3id.org/ns4kge/ontology#hasNSMethod> <http://www.w3.org/2000/01/rdf-schema#label> "has negative sampling method"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasOptimizer
+<https://w3id.org/ns4kge/ontology#hasOptimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasOptimizer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+<https://w3id.org/ns4kge/ontology#hasOptimizer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Optimizer> .
+<https://w3id.org/ns4kge/ontology#hasOptimizer> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a training protocol to an optimizer used for model training."@en .
+<https://w3id.org/ns4kge/ontology#hasOptimizer> <http://www.w3.org/2000/01/rdf-schema#label> "has optimizer"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasSubcategory
+<https://w3id.org/ns4kge/ontology#hasSubcategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasSubcategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#NSMethod> .
+<https://w3id.org/ns4kge/ontology#hasSubcategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Subcategory> .
+<https://w3id.org/ns4kge/ontology#hasSubcategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a negative sampling method to a more specific taxonomy subcategory."@en .
+<https://w3id.org/ns4kge/ontology#hasSubcategory> <http://www.w3.org/2000/01/rdf-schema#label> "has subcategory"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasTask
+<https://w3id.org/ns4kge/ontology#hasTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasTask> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#hasTask> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#Task> .
+<https://w3id.org/ns4kge/ontology#hasTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a configuration to the evaluation task, such as link prediction."@en .
+<https://w3id.org/ns4kge/ontology#hasTask> <http://www.w3.org/2000/01/rdf-schema#label> "has task"@en .
+# 
+# https://w3id.org/ns4kge/ontology#hasTrainingProtocol
+<https://w3id.org/ns4kge/ontology#hasTrainingProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#hasTrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Experimentation> .
+<https://w3id.org/ns4kge/ontology#hasTrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+<https://w3id.org/ns4kge/ontology#hasTrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an experimentation node to the training protocol reported for the article."@en .
+<https://w3id.org/ns4kge/ontology#hasTrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "has training protocol"@en .
+# 
+# https://w3id.org/ns4kge/ontology#mentionsKGEModel
+<https://w3id.org/ns4kge/ontology#mentionsKGEModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#mentionsKGEModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#mentionsKGEModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#KGEModel> .
+<https://w3id.org/ns4kge/ontology#mentionsKGEModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an article to a knowledge graph embedding model that it mentions or compares."@en .
+<https://w3id.org/ns4kge/ontology#mentionsKGEModel> <http://www.w3.org/2000/01/rdf-schema#label> "mentions KGE model"@en .
+# 
+# https://w3id.org/ns4kge/ontology#mentionsNSMethod
+<https://w3id.org/ns4kge/ontology#mentionsNSMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#mentionsNSMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#mentionsNSMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#NSMethod> .
+<https://w3id.org/ns4kge/ontology#mentionsNSMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an article to a negative sampling method that it mentions or compares."@en .
+<https://w3id.org/ns4kge/ontology#mentionsNSMethod> <http://www.w3.org/2000/01/rdf-schema#label> "mentions negative sampling method"@en .
+# 
+# https://w3id.org/ns4kge/ontology#proposesKGEModel
+<https://w3id.org/ns4kge/ontology#proposesKGEModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#proposesKGEModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#proposesKGEModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#KGEModel> .
+<https://w3id.org/ns4kge/ontology#proposesKGEModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an article to the knowledge graph embedding model that it proposes."@en .
+<https://w3id.org/ns4kge/ontology#proposesKGEModel> <http://www.w3.org/2000/01/rdf-schema#label> "proposes KGE model"@en .
+# 
+# https://w3id.org/ns4kge/ontology#proposesNSMethod
+<https://w3id.org/ns4kge/ontology#proposesNSMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ns4kge/ontology#proposesNSMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#proposesNSMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ns4kge/ontology#NSMethod> .
+<https://w3id.org/ns4kge/ontology#proposesNSMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an article to the negative sampling method that it proposes."@en .
+<https://w3id.org/ns4kge/ontology#proposesNSMethod> <http://www.w3.org/2000/01/rdf-schema#label> "proposes negative sampling method"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ns4kge/ontology#date
+<https://w3id.org/ns4kge/ontology#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ns4kge/ontology#date> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<https://w3id.org/ns4kge/ontology#date> <http://www.w3.org/2000/01/rdf-schema#comment> "Publication year of the scientific article."@en .
+<https://w3id.org/ns4kge/ontology#date> <http://www.w3.org/2000/01/rdf-schema#label> "date"@en .
+# 
+# https://w3id.org/ns4kge/ontology#learningRate
+<https://w3id.org/ns4kge/ontology#learningRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ns4kge/ontology#learningRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+<https://w3id.org/ns4kge/ontology#learningRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/ns4kge/ontology#learningRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Learning rate reported for a training protocol."@en .
+<https://w3id.org/ns4kge/ontology#learningRate> <http://www.w3.org/2000/01/rdf-schema#label> "learning rate"@en .
+# 
+# https://w3id.org/ns4kge/ontology#nsRatio
+<https://w3id.org/ns4kge/ontology#nsRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ns4kge/ontology#nsRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+<https://w3id.org/ns4kge/ontology#nsRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/ns4kge/ontology#nsRatio> <http://www.w3.org/2000/01/rdf-schema#comment> "Negative sampling ratio reported for a training protocol."@en .
+<https://w3id.org/ns4kge/ontology#nsRatio> <http://www.w3.org/2000/01/rdf-schema#label> "negative sampling ratio"@en .
+# 
+# https://w3id.org/ns4kge/ontology#result
+<https://w3id.org/ns4kge/ontology#result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ns4kge/ontology#result> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Configuration> .
+<https://w3id.org/ns4kge/ontology#result> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/ns4kge/ontology#result> <http://www.w3.org/2000/01/rdf-schema#comment> "Numeric value reported for an experimental configuration and metric."@en .
+<https://w3id.org/ns4kge/ontology#result> <http://www.w3.org/2000/01/rdf-schema#label> "result"@en .
+# 
+# https://w3id.org/ns4kge/ontology#title
+<https://w3id.org/ns4kge/ontology#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ns4kge/ontology#title> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ns4kge/ontology#Article> .
+<https://w3id.org/ns4kge/ontology#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ns4kge/ontology#title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the scientific article."@en .
+<https://w3id.org/ns4kge/ontology#title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/bibo/AcademicArticle
+<http://purl.org/ontology/bibo/AcademicArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/ns/void#Dataset
+<http://rdfs.org/ns/void#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ns4kge/ontology#Adaptability
+<https://w3id.org/ns4kge/ontology#Adaptability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Adaptability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+<https://w3id.org/ns4kge/ontology#Adaptability> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation dimension concerning adaptation to data, model, or training state."@en .
+<https://w3id.org/ns4kge/ontology#Adaptability> <http://www.w3.org/2000/01/rdf-schema#label> "Adaptability"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Article
+<https://w3id.org/ns4kge/ontology#Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/AcademicArticle> .
+<https://w3id.org/ns4kge/ontology#Article> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific article about knowledge graph embeddings and negative sampling."@en .
+<https://w3id.org/ns4kge/ontology#Article> <http://www.w3.org/2000/01/rdf-schema#label> "Article"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Category
+<https://w3id.org/ns4kge/ontology#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "High-level taxonomy category for negative sampling methods."@en .
+<https://w3id.org/ns4kge/ontology#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Configuration
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#hasKGEModel> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#hasNSMethod> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Reported experimental configuration combining a task, dataset, metric, result, and optionally a KGE model and negative sampling method."@en .
+<https://w3id.org/ns4kge/ontology#Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Dataset
+<https://w3id.org/ns4kge/ontology#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/ns/void#Dataset> .
+<https://w3id.org/ns4kge/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Benchmark dataset used to evaluate a configuration."@en .
+<https://w3id.org/ns4kge/ontology#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Effectiveness
+<https://w3id.org/ns4kge/ontology#Effectiveness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Effectiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+<https://w3id.org/ns4kge/ontology#Effectiveness> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation dimension concerning predictive performance."@en .
+<https://w3id.org/ns4kge/ontology#Effectiveness> <http://www.w3.org/2000/01/rdf-schema#label> "Effectiveness"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Efficiency
+<https://w3id.org/ns4kge/ontology#Efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Efficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+<https://w3id.org/ns4kge/ontology#Efficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation dimension concerning computational cost or scalability."@en .
+<https://w3id.org/ns4kge/ontology#Efficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Efficiency"@en .
+# 
+# https://w3id.org/ns4kge/ontology#EvaluationDimension
+<https://w3id.org/ns4kge/ontology#EvaluationDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#EvaluationDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Qualitative dimension for assessing negative sampling methods."@en .
+<https://w3id.org/ns4kge/ontology#EvaluationDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation dimension"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Experimentation
+<https://w3id.org/ns4kge/ontology#Experimentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Experimentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#hasConfiguration> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#Experimentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Experimental information extracted from an article, including training protocol and configurations."@en .
+<https://w3id.org/ns4kge/ontology#Experimentation> <http://www.w3.org/2000/01/rdf-schema#label> "Experimentation"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Hardware
+<https://w3id.org/ns4kge/ontology#Hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Hardware> <http://www.w3.org/2000/01/rdf-schema#comment> "Hardware or compute environment reported for a training protocol."@en .
+<https://w3id.org/ns4kge/ontology#Hardware> <http://www.w3.org/2000/01/rdf-schema#label> "Hardware"@en .
+# 
+# https://w3id.org/ns4kge/ontology#KGEModel
+<https://w3id.org/ns4kge/ontology#KGEModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#KGEModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Knowledge graph embedding model used in experiments."@en .
+<https://w3id.org/ns4kge/ontology#KGEModel> <http://www.w3.org/2000/01/rdf-schema#label> "KGE model"@en .
+# 
+# https://w3id.org/ns4kge/ontology#LossFunction
+<https://w3id.org/ns4kge/ontology#LossFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#LossFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Loss function used in a training protocol."@en .
+<https://w3id.org/ns4kge/ontology#LossFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Loss function"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Metric
+<https://w3id.org/ns4kge/ontology#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation metric used for a reported result."@en .
+<https://w3id.org/ns4kge/ontology#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric"@en .
+# 
+# https://w3id.org/ns4kge/ontology#NSMethod
+<https://w3id.org/ns4kge/ontology#NSMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#NSMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#hasCategory> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#NSMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#hasSubcategory> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#NSMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Negative sampling strategy proposed, mentioned, or evaluated in knowledge graph embedding experiments."@en .
+<https://w3id.org/ns4kge/ontology#NSMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Negative sampling method"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Optimizer
+<https://w3id.org/ns4kge/ontology#Optimizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Optimizer> <http://www.w3.org/2000/01/rdf-schema#comment> "Optimization algorithm used in a training protocol."@en .
+<https://w3id.org/ns4kge/ontology#Optimizer> <http://www.w3.org/2000/01/rdf-schema#label> "Optimizer"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Quality
+<https://w3id.org/ns4kge/ontology#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+<https://w3id.org/ns4kge/ontology#Quality> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation dimension concerning the quality of generated negatives or learned representations."@en .
+<https://w3id.org/ns4kge/ontology#Quality> <http://www.w3.org/2000/01/rdf-schema#label> "Quality"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Stability
+<https://w3id.org/ns4kge/ontology#Stability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Stability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+<https://w3id.org/ns4kge/ontology#Stability> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation dimension concerning robustness and consistency during training or evaluation."@en .
+<https://w3id.org/ns4kge/ontology#Stability> <http://www.w3.org/2000/01/rdf-schema#label> "Stability"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Subcategory
+<https://w3id.org/ns4kge/ontology#Subcategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Subcategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Fine-grained taxonomy subcategory for negative sampling methods."@en .
+<https://w3id.org/ns4kge/ontology#Subcategory> <http://www.w3.org/2000/01/rdf-schema#label> "Subcategory"@en .
+# 
+# https://w3id.org/ns4kge/ontology#Task
+<https://w3id.org/ns4kge/ontology#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation task addressed by a configuration."@en .
+<https://w3id.org/ns4kge/ontology#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@en .
+# 
+# https://w3id.org/ns4kge/ontology#TrainingProtocol
+<https://w3id.org/ns4kge/ontology#TrainingProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ns4kge/ontology#TrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#learningRate> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#TrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ns4kge/ontology#nsRatio> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ns4kge/ontology#TrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#comment> "Training setup reported for experiments, including optimizer, loss function, hardware, learning rate, and negative sampling ratio."@en .
+<https://w3id.org/ns4kge/ontology#TrainingProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "Training protocol"@en .
+# 
+_:genid8 <http://www.w3.org/2002/07/owl#exactCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/2002/07/owl#exactCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/2002/07/owl#exactCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid11 <http://www.w3.org/2002/07/owl#exactCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid12 <http://www.w3.org/2002/07/owl#members> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Stability> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Quality> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Efficiency> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Effectiveness> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Adaptability> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid18 <http://www.w3.org/2002/07/owl#members> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#TrainingProtocol> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Task> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Subcategory> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Optimizer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#NSMethod> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Metric> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#LossFunction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#KGEModel> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Hardware> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Experimentation> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#EvaluationDimension> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Dataset> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Configuration> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Category> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ns4kge/ontology#Article> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

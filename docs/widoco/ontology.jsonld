@@ -1,0 +1,910 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#hasKGEModel"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2002/07/owl#exactCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/2002/07/owl#exactCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ns4kge/ontology#Adaptability"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Effectiveness"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Efficiency"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Quality"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Stability"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ns4kge/ontology#Article"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Category"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Dataset"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Experimentation"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Hardware"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#KGEModel"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#LossFunction"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Metric"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Optimizer"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Subcategory"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#Task"
+    }, {
+      "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#hasNSMethod"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#hasConfiguration"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#hasCategory"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#hasSubcategory"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#learningRate"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#nsRatio"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2002/07/owl#exactCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2002/07/owl#exactCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/AcademicArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://rdfs.org/ns/void#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#exactCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@language" : "en",
+    "@value" : "Tebourski, I., Paris, P.-H., Preda, N., & Sais, F. (2026). NS4KGE Ontology (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20058306"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Fatiha Sais"
+  }, {
+    "@value" : "Ilyes Tebourski"
+  }, {
+    "@value" : "Nicoleta Preda"
+  }, {
+    "@value" : "Pierre-Henri Paris"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for representing scientific articles about negative sampling methods for knowledge graph embeddings."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "10.5281/zenodo.20058306"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-05-06"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "NS4KGE Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ns4kge"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/ns4kge/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.5281/zenodo.20058306"
+  }, {
+    "@id" : "https://github.com/IlyesTebourski/ns4kge-ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v1.0.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Adaptability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation dimension concerning adaptation to data, model, or training state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adaptability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Scientific article about knowledge graph embeddings and negative sampling."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/bibo/AcademicArticle"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "High-level taxonomy category for negative sampling methods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Category"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reported experimental configuration combining a task, dataset, metric, result, and optionally a KGE model and negative sampling method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error2"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error3"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error4"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Benchmark dataset used to evaluate a configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/ns/void#Dataset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Effectiveness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation dimension concerning predictive performance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Effectiveness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Efficiency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation dimension concerning computational cost or scalability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Efficiency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Qualitative dimension for assessing negative sampling methods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation dimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Experimentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Experimental information extracted from an article, including training protocol and configurations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Experimentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Hardware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Hardware or compute environment reported for a training protocol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hardware"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#KGEModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Knowledge graph embedding model used in experiments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "KGE model"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#LossFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Loss function used in a training protocol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Loss function"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Metric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation metric used for a reported result."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Metric"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#NSMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Negative sampling strategy proposed, mentioned, or evaluated in knowledge graph embedding experiments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Negative sampling method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Optimizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Optimization algorithm used in a training protocol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation dimension concerning the quality of generated negatives or learned representations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Stability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation dimension concerning robustness and consistency during training or evaluation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Subcategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fine-grained taxonomy subcategory for negative sampling methods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subcategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation task addressed by a configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Task"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Training setup reported for experiments, including optimizer, loss function, hardware, learning rate, and negative sampling ratio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Training protocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Publication year of the scientific article."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a negative sampling method to its high-level taxonomy category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Category"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an experimentation node to one reported experimental configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Experimentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasDataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a configuration to the benchmark dataset used for evaluation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Dataset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasEvaluationDimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a negative sampling method to a qualitative evaluation dimension."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has evaluation dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#EvaluationDimension"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasExperimentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an article to the experimental setup and reported configurations extracted from it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has experimentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Experimentation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasHardware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a training protocol to hardware information reported for the experiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has hardware"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Hardware"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasKGEModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a configuration to the knowledge graph embedding model evaluated in that configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has KGE model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#KGEModel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasLossFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a training protocol to a loss function used for optimization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has loss function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#LossFunction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a configuration to the evaluation metric used for the reported result."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Metric"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasNSMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a configuration to the negative sampling method evaluated in that configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has negative sampling method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasOptimizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a training protocol to an optimizer used for model training."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has optimizer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Optimizer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasSubcategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a negative sampling method to a more specific taxonomy subcategory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has subcategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Subcategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a configuration to the evaluation task, such as link prediction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Task"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#hasTrainingProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an experimentation node to the training protocol reported for the article."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Experimentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has training protocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#learningRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Learning rate reported for a training protocol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "learning rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#mentionsKGEModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an article to a knowledge graph embedding model that it mentions or compares."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mentions KGE model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#KGEModel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#mentionsNSMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an article to a negative sampling method that it mentions or compares."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mentions negative sampling method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#nsRatio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Negative sampling ratio reported for a training protocol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#TrainingProtocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "negative sampling ratio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#proposesKGEModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an article to the knowledge graph embedding model that it proposes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "proposes KGE model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#KGEModel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#proposesNSMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an article to the negative sampling method that it proposes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "proposes negative sampling method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#NSMethod"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Numeric value reported for an experimental configuration and metric."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ns4kge/ontology#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Title of the scientific article."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ns4kge/ontology#Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]
