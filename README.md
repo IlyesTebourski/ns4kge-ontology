@@ -25,6 +25,7 @@ Reusable ontology for representing scientific papers about knowledge graph embed
 - License: CC BY 4.0.
 - Zenodo DOI: `https://doi.org/10.5281/zenodo.20160705`.
 - Dereferenceable ontology IRI: `https://w3id.org/ns4kge/ontology`.
+- Documentation (WIDOCO): `https://ilyestebourski.github.io/ns4kge-ontology/widoco/index-en.html`.
 
 The repository contains only the ontology, generated SHACL shapes, documentation, and synthetic examples. It does not redistribute source article text.
 
