@@ -71,6 +71,27 @@ Validate a populated KG with:
 ```bash
 uv run nofacts-validate --data ../ns4kge-kg/kg/ns4kge_populated.ttl --shapes ../ns4kge-ontology/ontology/ns4kge_shapes.ttl
 ```
+## Comparison
+
+Positioning of NS4KGE with respect to related resources.
+✓ supported · △ partial/limited · ✗ not supported · N/A not applicable (e.g. schema-only).
+*Bib. KGs* groups Semantic Scholar, OpenAlex, and DBLP.
+
+| Feature | ORKG | CS-KG | Bib. KGs | ML-Schema | OntoDM | NS4KGE |
+|---|:--:|:--:|:--:|:--:|:--:|:--:|
+| Bibliographic metadata (papers, authors, venues) | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ |
+| Structured research contributions (tasks, methods, datasets) | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ |
+| Machine learning / experiment modeling | △ | △ | ✗ | ✓ | ✓ | ✓ |
+| Literature-populated resource | ✓ | ✓ | ✓ | N/A | N/A | ✓ |
+| Automated population from scientific articles | △ | ✓ | ✓ | N/A | N/A | ✓ |
+| Reuse of standard vocabularies / interoperability | ✓ | ✓ | △ | ✓ | ✓ | ✓ |
+| Configuration-level experimental results (dataset–model–method–metric–score) | △ | ✗ | ✗ | ✓ | △ | ✓ |
+| KGE- and negative-sampling-specific concepts | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ |
+| Distinction between proposed methods and baselines | △ | ✗ | ✗ | ✗ | ✗ | ✓ |
+| Cross-paper comparison of experimental practices | △ | △ | ✗ | ✗ | ✗ | ✓ |
+| Designed for analyzing negative sampling in KGE literature | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ |
+
+NS4KGE is complementary to existing resources. Bibliographic knowledge graphs (Semantic Scholar, OpenAlex, DBLP) provide rich paper, author, and venue metadata but do not represent research contributions or experimental content. ORKG and CS-KG add structured research contributions (tasks, methods, datasets, metrics), and CS-KG, like NS4KGE, is populated automatically from a large corpus; however, neither models experimental configurations linking a sampling method, an embedding model, a dataset, a metric, and a reported score, nor distinguishes proposed methods from baselines. ML-Schema and OntoDM provide reusable vocabularies for describing machine learning and data mining experiments at the level of runs, evaluations, and measures, but are general-purpose schemas rather than populated literature resources, and are not designed for cross-paper comparison of reported practices. NS4KGE reuses standard Semantic Web vocabularies for interoperability while adding KGE- and negative-sampling-specific concepts, configuration-level results extracted from scientific articles, and support for cross-paper analysis of negative sampling practices.
 
 ## License
 Ontology files, documentation, and examples are licensed under CC BY 4.0.
