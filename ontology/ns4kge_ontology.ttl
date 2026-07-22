@@ -137,6 +137,59 @@ ns4kge:proposesKGEModel rdf:type owl:ObjectProperty ;
     rdfs:domain ns4kge:Article ;
     rdfs:range ns4kge:KGEModel .
 
+ns4kge:isExperimentationOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is experimentation of"@en ;
+    rdfs:comment "Connects an experimentation node to the article it describes."@en ;
+    owl:inverseOf ns4kge:hasExperimentation .
+
+ns4kge:isConfigurationOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is configuration of"@en ;
+    rdfs:comment "Connects a configuration to the experimentation node that contains it."@en ;
+    owl:inverseOf ns4kge:hasConfiguration .
+
+ns4kge:isTrainingProtocolOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is training protocol of"@en ;
+    rdfs:comment "Connects a training protocol to the experimentation node that reports it."@en ;
+    owl:inverseOf ns4kge:hasTrainingProtocol .
+
+ns4kge:isDatasetOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is dataset of configuration"@en ;
+    rdfs:comment "Connects a dataset to a configuration that uses it."@en ;
+    owl:inverseOf ns4kge:hasDataset .
+
+ns4kge:isMetricOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is metric of configuration"@en ;
+    rdfs:comment "Connects a metric to a configuration that reports it."@en ;
+    owl:inverseOf ns4kge:hasMetric .
+
+ns4kge:isTaskOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is task of configuration"@en ;
+    rdfs:comment "Connects a task to a configuration that evaluates it."@en ;
+    owl:inverseOf ns4kge:hasTask .
+
+ns4kge:isKGEModelOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is KGE model of configuration"@en ;
+    rdfs:comment "Connects a KGE model to a configuration that evaluates it."@en ;
+    owl:inverseOf ns4kge:hasKGEModel .
+
+ns4kge:isNSMethodOfConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "is negative sampling method of configuration"@en ;
+    rdfs:comment "Connects a negative sampling method to a configuration that evaluates it."@en ;
+    owl:inverseOf ns4kge:hasNSMethod .
+
+ns4kge:hasArticleConfiguration rdf:type owl:ObjectProperty ;
+    rdfs:label "has article configuration"@en ;
+    rdfs:comment "Connects an article directly to configurations reported in its experimentation."@en ;
+    rdfs:domain ns4kge:Article ;
+    rdfs:range ns4kge:Configuration ;
+    owl:propertyChainAxiom ( ns4kge:hasExperimentation ns4kge:hasConfiguration ) .
+
+ns4kge:isSubcategoryOf rdf:type owl:ObjectProperty ;
+    rdfs:label "is subcategory of"@en ;
+    rdfs:comment "Connects a taxonomy subcategory to its high-level category."@en ;
+    rdfs:domain ns4kge:Subcategory ;
+    rdfs:range ns4kge:Category .
+
 #################################################################
 #    Data Properties
 #################################################################
@@ -291,7 +344,7 @@ ns4kge:Stability rdf:type owl:Class ;
                 ns4kge:Quality
                 ns4kge:Adaptability
                 ns4kge:Stability
-              )
+               )
 ] .
 
 #################################################################
@@ -302,37 +355,57 @@ ns4kge:Stability rdf:type owl:Class ;
 ns4kge:Experimentation rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasConfiguration ;
-      owl:minCardinality 1 ] .
+      owl:minQualifiedCardinality 1 ;
+      owl:onClass ns4kge:Configuration ] .
+
+# Article has at most one Experimentation node.
+ns4kge:Article rdfs:subClassOf
+    [ rdf:type owl:Restriction ;
+      owl:onProperty ns4kge:hasExperimentation ;
+      owl:maxQualifiedCardinality 1 ;
+      owl:onClass ns4kge:Experimentation ] .
+
+# Experimentation has exactly one TrainingProtocol.
+ns4kge:Experimentation rdfs:subClassOf
+    [ rdf:type owl:Restriction ;
+      owl:onProperty ns4kge:hasTrainingProtocol ;
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:TrainingProtocol ] .
 
 # Configuration has exactly one Dataset.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasDataset ;
-      owl:exactCardinality 1 ] .
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:Dataset ] .
 
 # Configuration has exactly one Task.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasTask ;
-      owl:exactCardinality 1 ] .
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:Task ] .
 
 # Configuration has exactly one Metric.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasMetric ;
-      owl:exactCardinality 1 ] .
+      owl:qualifiedCardinality 1 ;
+      owl:onClass ns4kge:Metric ] .
 
 # Configuration has at most one KGEModel.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasKGEModel ;
-      owl:maxCardinality 1 ] .
+      owl:maxQualifiedCardinality 1 ;
+      owl:onClass ns4kge:KGEModel ] .
 
 # Configuration has at most one NSMethod.
 ns4kge:Configuration rdfs:subClassOf
     [ rdf:type owl:Restriction ;
       owl:onProperty ns4kge:hasNSMethod ;
-      owl:maxCardinality 1 ] .
+      owl:maxQualifiedCardinality 1 ;
+      owl:onClass ns4kge:NSMethod ] .
 
 # Configuration has exactly one result.
 ns4kge:Configuration rdfs:subClassOf

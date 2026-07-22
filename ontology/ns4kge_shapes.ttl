@@ -8,7 +8,7 @@ ns4kge:ArticleShape
     a sh:NodeShape ;
     sh:targetClass ns4kge:Article ;
     sh:property [ sh:path ns4kge:date ; sh:datatype xsd:gYear ] ;
-    sh:property [ sh:path ns4kge:hasExperimentation ; sh:class ns4kge:Experimentation ] ;
+    sh:property [ sh:path ns4kge:hasExperimentation ; sh:maxCount 1 ; sh:class ns4kge:Experimentation ] ;
     sh:property [ sh:path ns4kge:mentionsKGEModel ; sh:class ns4kge:KGEModel ] ;
     sh:property [ sh:path ns4kge:mentionsNSMethod ; sh:class ns4kge:NSMethod ] ;
     sh:property [ sh:path ns4kge:proposesKGEModel ; sh:class ns4kge:KGEModel ] ;
@@ -24,14 +24,14 @@ ns4kge:ConfigurationShape
     sh:property [ sh:path ns4kge:hasMetric ; sh:minCount 1 ; sh:maxCount 1 ; sh:class ns4kge:Metric ] ;
     sh:property [ sh:path ns4kge:hasNSMethod ; sh:maxCount 1 ; sh:class ns4kge:NSMethod ] ;
     sh:property [ sh:path ns4kge:hasTask ; sh:minCount 1 ; sh:maxCount 1 ; sh:class ns4kge:Task ] ;
-    sh:property [ sh:path ns4kge:result ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ] .
+    sh:property [ sh:path ns4kge:result ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] .
 
 # -- Experimentation
 ns4kge:ExperimentationShape
     a sh:NodeShape ;
     sh:targetClass ns4kge:Experimentation ;
     sh:property [ sh:path ns4kge:hasConfiguration ; sh:minCount 1 ; sh:class ns4kge:Configuration ] ;
-    sh:property [ sh:path ns4kge:hasTrainingProtocol ; sh:class ns4kge:TrainingProtocol ] .
+    sh:property [ sh:path ns4kge:hasTrainingProtocol ; sh:minCount 1 ; sh:maxCount 1 ; sh:class ns4kge:TrainingProtocol ] .
 
 # -- NSMethod
 ns4kge:NSMethodShape
@@ -48,5 +48,5 @@ ns4kge:TrainingProtocolShape
     sh:property [ sh:path ns4kge:hasHardware ; sh:class ns4kge:Hardware ] ;
     sh:property [ sh:path ns4kge:hasLossFunction ; sh:class ns4kge:LossFunction ] ;
     sh:property [ sh:path ns4kge:hasOptimizer ; sh:class ns4kge:Optimizer ] ;
-    sh:property [ sh:path ns4kge:learningRate ; sh:maxCount 1 ; sh:datatype xsd:decimal ] ;
-    sh:property [ sh:path ns4kge:nsRatio ; sh:maxCount 1 ; sh:datatype xsd:decimal ] .
+    sh:property [ sh:path ns4kge:learningRate ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path ns4kge:nsRatio ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] .
