@@ -358,13 +358,6 @@ ns4kge:Experimentation rdfs:subClassOf
       owl:minQualifiedCardinality 1 ;
       owl:onClass ns4kge:Configuration ] .
 
-# Article has at most one Experimentation node.
-ns4kge:Article rdfs:subClassOf
-    [ rdf:type owl:Restriction ;
-      owl:onProperty ns4kge:hasExperimentation ;
-      owl:maxQualifiedCardinality 1 ;
-      owl:onClass ns4kge:Experimentation ] .
-
 # Experimentation has exactly one TrainingProtocol.
 ns4kge:Experimentation rdfs:subClassOf
     [ rdf:type owl:Restriction ;
