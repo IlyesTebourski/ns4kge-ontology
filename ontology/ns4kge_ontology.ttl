@@ -184,6 +184,13 @@ ns4kge:hasArticleConfiguration rdf:type owl:ObjectProperty ;
     rdfs:range ns4kge:Configuration ;
     owl:propertyChainAxiom ( ns4kge:hasExperimentation ns4kge:hasConfiguration ) .
 
+ns4kge:usesDataset rdf:type owl:ObjectProperty ;
+    rdfs:label "uses dataset"@en ;
+    rdfs:comment "Connects an article directly to the datasets used in the configurations reported in its experimentation. Materialised by an OWL 2 property chain over hasExperimentation, hasConfiguration and hasDataset."@en ;
+    rdfs:domain ns4kge:Article ;
+    rdfs:range ns4kge:Dataset ;
+    owl:propertyChainAxiom ( ns4kge:hasExperimentation ns4kge:hasConfiguration ns4kge:hasDataset ) .
+
 ns4kge:isSubcategoryOf rdf:type owl:ObjectProperty ;
     rdfs:label "is subcategory of"@en ;
     rdfs:comment "Connects a taxonomy subcategory to its high-level category."@en ;

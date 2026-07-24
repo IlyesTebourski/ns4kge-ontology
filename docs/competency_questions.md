@@ -11,7 +11,7 @@
 
 ---
 
-## Use Case 2 — Reporting coverage and comparability
+## Use Case 2 — Evaluation coverage
 
 *Goal: Assess completeness and comparability of experimental descriptions.*
 

@@ -6,6 +6,8 @@ Reusable ontology for representing scientific papers about knowledge graph embed
 - `ontology/ns4kge_ontology.ttl` is the authoritative OWL/Turtle ontology.
 - `ontology/ns4kge_shapes.ttl` is generated SHACL from ontology domains, ranges, and cardinality restrictions.
 - `docs/competency_questions.md` lists the competency questions used by the paper.
+- `docs/ontology_design.md` is a detailed rationale for the modeling choices.
+- `docs/methodology.md` documents the iterative construction methodology and population pipeline.
 - `examples/minimal_instance.ttl` is a synthetic example instance; it is not derived from any published paper.
 
 ## Version
@@ -46,6 +48,7 @@ The repository contains only the ontology, generated SHACL shapes, documentation
 - `ns4kge:Configuration` represents one reported result for a task, dataset, metric, KGE model, and optional negative sampling method.
 - Negative sampling categories and subcategories are attached to `ns4kge:NSMethod`, not directly to articles.
 - Benchmark datasets are modeled as `ns4kge:Dataset` and subclass `void:Dataset`.
+- OWL 2 property chains materialize common multi-hop paths for querying: `hasArticleConfiguration` (article → configuration) and `usesDataset` (article → dataset used in its configurations).
 - The ontology uses `dcterms` for artifact metadata, `vann` for preferred namespace metadata, BIBO for article alignment, and VoID for dataset alignment.
 
 ## Sustainability And Maintenance
